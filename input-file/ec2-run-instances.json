@@ -1,0 +1,27 @@
+{
+    "DryRun": false,
+    "ImageId": "AMI_ID",
+    "KeyName": "KEYNAME",
+
+    "InstanceType": "INSTANCE_TYPE",
+    "Placement": {
+      "Tenancy": "default",
+      "AvailabilityZone": "REGION"
+    },
+    "Monitoring": {
+        "Enabled": true
+    },
+    "SubnetId": "SUBNET_ID",
+    "SecurityGroupIds": [
+            "SG_ID"
+    ],
+    "NetworkInterfaces": [
+        {
+            "DeviceIndex": 0,
+            "DeleteOnTermination": true,
+            "AssociatePublicIpAddress": true
+        }
+    ],
+    "DisableApiTermination": false,
+    "EbsOptimized": false
+}
